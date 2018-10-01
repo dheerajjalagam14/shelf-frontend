@@ -1,17 +1,16 @@
 <template>
 	<v-layout column wrap>
-	  <p>Hello</p>
+    <shelf-card></shelf-card>
 	</v-layout>
 </template>
 
 <script>
+import ShelfCard from './ShelfCard';
 export default {
-  data () {
-    return {
-
-    }
+  components: {
+    ShelfCard,
   }
-}
+};
 </script>
 
 <style lang="css" scoped>
