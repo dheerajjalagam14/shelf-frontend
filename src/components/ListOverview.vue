@@ -3,7 +3,7 @@
     <v-layout row>
       <v-flex xs12 sm6 offset-sm3>
         <v-card>
-          <v-toolbar color="cyan"
+          <!-- <v-toolbar color="cyan"
           dark
           >
           <v-toolbar-side-icon>
@@ -17,7 +17,7 @@
             <v-btn icon>
               <v-icon></v-icon>
             </v-btn>
-          </v-toolbar>
+          </v-toolbar> -->
 
           <v-list three-line>
           <template v-for="(item, index) in items">
