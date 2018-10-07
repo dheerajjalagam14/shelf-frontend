@@ -10,8 +10,6 @@
         </v-toolbar-side-icon>
             <v-toolbar-title>Movies</v-toolbar-title>
 
-
-
             <v-btn icon>
               <v-icon></v-icon>
             </v-btn>
@@ -52,10 +50,11 @@
               </v-list-tile-content>
             </v-list-tile>
           </template>
-          <v-btn justify center
-          dark>
-          Add New Movie</v-btn>
         </v-list>
+        <v-btn center
+        dark>
+        Add New Movie</v-btn>
+
       </v-card>
     </v-flex>
   </v-layout>
