@@ -38,7 +38,7 @@
               v-else
               :key="item.title"
               avatar
-              @click=""
+              @click="'/'"
             >
               <v-list-tile-avatar>
                 <img :src="item.avatar">
@@ -62,33 +62,33 @@
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        items: [
-          {
-            avatar: 'https://m.media-amazon.com/images/M/MV5BMTg5NTA3NTg4NF5BMl5BanBnXkFtZTcwNTA0NDYzOA@@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
-            title: 'Looper',
-            subtitle: "Movie Info"
-          },
-          { divider: true, inset: true },
-          {
-            avatar: 'https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_.jpg',
-            title: 'Avatar',
-            subtitle: "Movie Info"
-          },
-          { divider: true, inset: true },
-          {
-            avatar: 'https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-            title: 'A Quiet Place',
-            subtitle: "Movie Info"
-          },
-        ]
-      }
-    }
-  }
+export default {
+  data() {
+    return {
+      items: [
+        {
+          avatar: 'https://m.media-amazon.com/images/M/MV5BMTg5NTA3NTg4NF5BMl5BanBnXkFtZTcwNTA0NDYzOA@@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
+          title: 'Looper',
+          subtitle: 'Movie Info',
+        },
+        { divider: true, inset: true },
+        {
+          avatar: 'https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_.jpg',
+          title: 'Avatar',
+          subtitle: 'Movie Info',
+        },
+        { divider: true, inset: true },
+        {
+          avatar: 'https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
+          title: 'A Quiet Place',
+          subtitle: 'Movie Info',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
 
-</style scoped>
+</style>
