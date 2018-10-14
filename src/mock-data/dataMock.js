@@ -48,13 +48,6 @@ const app = {
                             },
                         ],
                     },
-                ],
-            },
-            {
-                shelfType: 'Movies',
-                shelfID: 0,
-                shelfCreated: 'Sun Dec 17 1995 03:24:00 GMT-0600 (Central Standard Time)',
-                shelfContents: [
                     {
                         itemName: 'Dawn of the dead',
                         itemID: 1,
@@ -81,6 +74,62 @@ const app = {
                     },
                 ],
             },
+            {
+                shelfType: 'Books',
+                shelfID: 0,
+                shelfCreated: 'Sun Dec 17 1995 03:24:00 GMT-0600 (Central Standard Time)',
+                shelfContents: [
+                    {
+                        itemName: 'Do Androids Dream of Electric Sheep',
+                        itemID: 0,
+                        itemCreate: 'Sun Dec 17 1995 03:24:00 GMT-0600 (Central Standard Time)',
+                        // this will be a buffer later image url for now. 
+                        imageBlob: 'https://upload.wikimedia.org/wikipedia/en/e/ee/DoAndroidsDream.png',
+                        tags: [
+                            'science fiction',
+                        ],
+                        otherProps: [
+                            {
+                                key: 'Author',
+                                value: 'Philip K. Dick',
+                            },
+                            {
+                                key: 'Published',
+                                value: '1968',
+                            },
+                            {
+                                key: 'Notes',
+                                value: 'One of the greatest scifi books ever!',
+                            },
+                        ],
+                    },
+                    {
+                        itemName: 'A Scanner Darkly',
+                        itemID: 1,
+                        itemCreate: 'Sun Dec 17 1995 03:24:00 GMT-0600 (Central Standard Time)',
+                        // this will be a buffer later image url for now. 
+                        imageBlob: 'https://en.wikipedia.org/wiki/A_Scanner_Darkly#/media/File:AScannerDarkly(1stEd).jpg',
+                        tags: [
+                            'science fiction',
+                        ],
+                        otherProps: [
+                            {
+                                key: 'Author',
+                                value: 'Philip K. Dick',
+                            },
+                            {
+                                key: 'Published',
+                                value: '1977',
+                            },
+                            {
+                                key: 'Notes',
+                                value: 'Another one of the greatest scifi books ever!',
+                            },
+                        ],
+                    },
+                ],
+            },
+
         ],
     },
 };
