@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import About from './views/About.vue';
 import ShelfOverview from './components/ShelfOverview.vue';
+import ListOverview from './components/ListOverview.vue'
 
 Vue.use(Router);
 
@@ -10,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home,
+      name: 'List',
+      component: ListOverview,
     },
     {
       path: '/about',
