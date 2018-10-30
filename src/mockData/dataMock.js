@@ -1,5 +1,5 @@
 //app view
-const app = {
+export const app = {
     globalTemplates: [
         {
             shelfType: 'makeNewTemplate',
@@ -14,7 +14,7 @@ const app = {
     user: {
         userName: 'seymourbuts',
         userEmail: 'seymourbuts@aol.com',
-        userToken: '01234567', 
+        userToken: '01234567',
         userTemplates: [
             {templateItem = item },
         ],
@@ -135,22 +135,22 @@ const app = {
 };
 
 //itemized
-user = {
+export const user = {
     userName: string,
     userEmail: string,
-    userToken: string, 
+    userToken: string,
     userTemplates: [{templateItem = item }],
     bookcase: [{shelf}],
 }
 
-shelf = { 
+export const shelf = {
     shelfType: 'name for this shelf',
     shelfID: number,
     shelfCreated: date,
     shelfContents: [{items}],
 }
 
-item =  {
+export const item =  {
     itemName: string,
     itemID: number,
     itemCreated: date,
@@ -159,11 +159,18 @@ item =  {
     otherProps: [{prop}],
 }
 
-tag = 'string';
+export const tag = 'string';
 
-prop = {
+export const prop = {
     key: 'string',
     value: 'string'
 }
 
-export default app;
+export default {
+    app,
+    user,
+    shelf,
+    item,
+    tag,
+    prop,
+};
