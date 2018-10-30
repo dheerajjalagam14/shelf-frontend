@@ -52,7 +52,7 @@ export const app = {
                         itemName: 'Dawn of the dead',
                         itemID: 1,
                         itemCreate: 'Sun Dec 17 1995 03:24:00 GMT-0600 (Central Standard Time)',
-                        // this will be a buffer later image url for now. 
+                        // this will be a buffer later image url for now.
                         imageBlob: 'https://m.media-amazon.com/images/M/MV5BMzc1YTIyNjctYzhlNy00ZmYzLWI2ZWQtMzk4MmQwYzA0NGQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg',
                         tags: [
                             'horror',

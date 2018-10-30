@@ -8,6 +8,8 @@ import mockData from '@/mockData/dataMock';
 export const SET_SHELF_LIST = 'SET_SHELF_LIST';
 export const SET_ITEM_LIST = 'SET_ITEM_LIST';
 export const SET_ITEM = 'SET_ITEM';
+export const SET_ERROR = 'SET_ERROR';
+
 // Helper Functions
 
 // Initial State
@@ -15,6 +17,11 @@ export const initialState = {
   shelfList: {},
   itemList: {},
   item: {},
+  errorMsgs: {
+    fetchShelfList: null,
+    fetchItemList: null,
+    fetchItem: null,
+  }
 };
 
 // Getters
@@ -26,29 +33,54 @@ export const getters = {
 
 // Mutations
 export const mutations = {
-  [SET_SHELF_LIST](state, payload) {
-    state.shelfList = { ...payload };
+  [SET_SHELF_LIST](state, fetchedShelfList) {
+    state.shelfList = { ...fetchedShelfList };
   },
-  [SET_ITEM_LIST](state, payload) {
-    state.itemList = { ...payload };
+  [SET_ITEM_LIST](state, fetchedItemList) {
+    state.itemList = { ...fetchedItemList };
   },
-  [SET_ITEM](state, payload) {
-    state.item = { ...payload };
-  }
+  [SET_ITEM](state, fetchedItem) {
+    state.item = { ...fetchedItem };
+  },
+  [SET_ERROR](state, { message, field }) {
+    state.errorMsgs[field] = message;
+  },
 };
 
 // Actions
 export const actions = {
-  /*
-    nameofaction: ({commit, state}, payload) => commit(MUTATION, payload),
-   */
-  fetchShelfList: ({commit}, payoad) => {
+  // When the user first logs in fetch their shelves.
+  fetchShelfList: ({commit}, userID) => {
     const onSuccess = (result) => {
-      commit(SHELF_LIST)
+      commit(SET_SHELF_LIST, result);
     };
 
     const onFailure = (error) => {
+      commit(SET_ERROR, { message: error.message, field: 'fetchShelfList' });
+    };
 
+    // api call here
+  },
+
+  fetchItemList: ({commit}, shelfID) => {
+    const onSuccess = (result) => {
+      commit(SET_ITEM_LIST, result);
+    };
+
+    const onFailure = (error) => {
+      commit(SET_ERROR, { message: error.message, field: 'fetchItemList' });
+    };
+
+    // api call here
+  },
+
+  fetchItem: ({commit}, itemID) => {
+    const onSuccess = (result) => {
+      commit(SET_ITEM, result);
+    };
+
+    const onFailure = (error) => {
+      commit(SET_ERROR, { message: error.message, field: 'fetchItem' });
     };
 
     // api call here
