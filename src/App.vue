@@ -7,7 +7,6 @@
     <v-tooltip bottom>
     <v-btn icon
     slot="activator"
-    dark
     to="/"
     >
       <v-icon>fa fa-home</v-icon>
@@ -31,7 +30,6 @@
 
       <v-menu open-on-hover
         :nudge-width="100"
-        dark
         transition="slide-y-transition">
 
           <v-btn icon
@@ -44,10 +42,11 @@
           <v-list>
             <v-list-tile
               v-for="item in items"
-              :key="item"
+              :key="item.label"
               @click=""
+              :to="item.value"
               >
-              <v-list-tile-title v-text="item"></v-list-tile-title>
+              <v-list-tile-title v-text="item.label" ></v-list-tile-title>
               </v-list-tile>
             </v-list>
           </v-menu>
@@ -65,7 +64,10 @@ export default {
   data() {
     return {
       items: [
-        'Settings', 'My Account', 'Help', 'Logout',
+        { label: 'Settings', value: '/settings' },
+        { label: 'My Account', value: '/account' },
+        { label: 'Help', value: '/help' },
+        { label: 'Logout', value: '/login' },
       ],
     };
   },
