@@ -51,9 +51,11 @@
             </v-list-tile>
           </template>
         </v-list>
-        <v-btn center
-        dark>
-        Add New Movie</v-btn>
+        <v-layout class="ma-4" row align-center justify-space-between>
+        <v-btn center dark>Add New Movie</v-btn>
+        <v-icon>fas fa-cog</v-icon>
+      </v-layout>
+
 
       </v-card>
     </v-flex>

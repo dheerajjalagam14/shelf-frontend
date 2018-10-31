@@ -4,6 +4,7 @@ import ListOverview from './components/ListOverview.vue';
 import LoginPage from './components/LoginPage.vue';
 import SettingsPage from './components/SettingsPage.vue';
 import ShelfOverview from './components/ShelfOverview.vue';
+import Register from './components/register.vue';
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/list-overview',
       name: 'ListOverview',
       component: ListOverview,
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register,
     },
   ],
 });
