@@ -3,7 +3,7 @@
     <v-flex xs12 sm6 offset-sm3>
       <v-card>
         <v-list two-line>
-          <template v-for="(item, index) in items">
+          <template v-for="(item, index) in itemName">
             <v-divider
               v-if="item.divider"
               :inset="item.inset"
@@ -11,16 +11,16 @@
             ></v-divider>
             <v-list-tile
               v-else
-              :key="item.title"
+              :key='item.title'
               avatar
               @click="'/'"
             >
               <v-list-tile-avatar>
-                <img :src="item.avatar">
+                <img :src='item.avatar'>
               </v-list-tile-avatar>
               <v-list-tile-content>
-                <v-list-tile-title v-html="item.title"></v-list-tile-title>
-                <v-list-tile-sub-title v-html="item.subtitle"></v-list-tile-sub-title>
+                <v-list-tile-title v-html='item.title'></v-list-tile-title>
+                <v-list-tile-sub-title v-html='item.subtitle'></v-list-tile-sub-title>
               </v-list-tile-content>
             </v-list-tile>
           </template>
@@ -40,7 +40,7 @@
 export default {
   data() {
     return {
-      items: [
+      itemName: [
         {
           avatar: 'https://m.media-amazon.com/images/M/MV5BMTg5NTA3NTg4NF5BMl5BanBnXkFtZTcwNTA0NDYzOA@@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
           title: 'Looper',
