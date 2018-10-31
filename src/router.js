@@ -2,9 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import ListOverview from './components/ListOverview.vue';
 import LoginPage from './components/LoginPage.vue';
-import SettingsPage from './components/SettingsPage';
+import SettingsPage from './components/SettingsPage.vue';
 import ShelfOverview from './components/ShelfOverview.vue';
-import ListOverview from './components/ListOverview.vue';
 
 Vue.use(Router);
 
@@ -18,8 +17,9 @@ export default new Router({
     {
       path: '/settings',
       name: 'Settings',
-      component: SettingsPage
+      component: SettingsPage,
     },
+    {
       path: '/',
       name: 'ShelfOverview',
       component: ShelfOverview,

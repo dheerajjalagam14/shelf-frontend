@@ -64,26 +64,12 @@ export default {
   name: 'App',
   data() {
     return {
-<<<<<<< HEAD
       items: [
         { label: 'Settings', value: '/settings' },
         { label: 'My Account', value: '/account' },
         { label: 'Help', value: '/help' },
         { label: 'Logout', value: '/login' },
       ],
-=======
-      clipped: false,
-      drawer: true,
-      fixed: false,
-      items: [{
-        icon: 'fas fa-shapes',
-        title: 'Inspire',
-      }],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js',
->>>>>>> master
     };
   },
 };

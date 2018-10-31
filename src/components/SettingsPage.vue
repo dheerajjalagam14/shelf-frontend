@@ -6,7 +6,7 @@
   <v-radio value="Light">
     <div slot="label"><strong>Light</strong></div>
       </v-radio>
-  <v-radio value="Dark"> 
+  <v-radio value="Dark">
     <div slot="label"><strong>Dark</strong></div>
       </v-radio>
   </v-radio-group>
@@ -14,14 +14,14 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        dark: false,
-        light: false,
-      }
-    }
-  }
+export default {
+  data() {
+    return {
+      dark: false,
+      light: false,
+    };
+  },
+};
 </script>
 
 <style scoped>
