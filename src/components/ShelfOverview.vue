@@ -15,6 +15,12 @@
           </v-list-tile-content>
         </v-list-tile>
       </template>
+      <v-list-tile to="/">
+        <v-list-tile-avatar>
+          <v-icon>fas fa-plus</v-icon>
+        </v-list-tile-avatar>
+        <v-list-tile-title>Create New Shelf</v-list-tile-title>
+      </v-list-tile>
     </v-list>
   </v-layout>
 </template>
@@ -35,6 +41,14 @@ export default {
         {
           shelfIcon: 'fas fa-gamepad',
           shelfName: 'Videogames',
+        },
+        {
+          shelfIcon: 'far fa-envelope',
+          shelfName: 'Stamps',
+        },
+        {
+          shelfIcon: 'fas fa-music',
+          shelfName: 'Music',
         },
       ],
     };
