@@ -1,39 +1,14 @@
 <template>
-  <div class="listOverview">
-    <v-layout row>
-      <v-flex xs12 sm8 md4>
-        <v-card>
-          <v-toolbar color="cyan"
-          dark
-          >
-          <v-toolbar-side-icon>
-        </v-toolbar-side-icon>
-            <v-toolbar-title>Movies</v-toolbar-title>
-
-            <v-btn icon>
-              <v-icon></v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon></v-icon>
-            </v-btn>
-          </v-toolbar>
-
-          <v-list three-line>
+  <v-layout row>
+    <v-flex xs12 sm6 offset-sm3>
+      <v-card>
+        <v-list two-line>
           <template v-for="(item, index) in itemName">
-            <v-subheader
-              v-if="item.header"
-              :key="item.header"
-            >
-              {{ item.header }}
-            </v-subheader>
-
             <v-divider
-              v-else-if="item.divider"
+              v-if="item.divider"
               :inset="item.inset"
               :key="index"
             ></v-divider>
-
             <v-list-tile
               v-else
               :key='item.title'
@@ -43,25 +18,24 @@
               <v-list-tile-avatar>
                 <img :src='item.avatar'>
               </v-list-tile-avatar>
-
               <v-list-tile-content>
                 <v-list-tile-title v-html='item.title'></v-list-tile-title>
                 <v-list-tile-sub-title v-html='item.subtitle'></v-list-tile-sub-title>
               </v-list-tile-content>
             </v-list-tile>
           </template>
+          <v-list-tile to="/list-overview">
+            <v-list-tile-avatar>
+              <v-icon>fas fa-plus</v-icon>
+            </v-list-tile-avatar>
+            <v-list-tile-title>Add New Item</v-list-tile-title>
+          </v-list-tile>
         </v-list>
-        <v-layout class="ma-4" row align-center justify-space-between>
-        <v-btn center dark>Add New Movie</v-btn>
-        <v-icon>fas fa-cog</v-icon>
-      </v-layout>
-
-
       </v-card>
     </v-flex>
   </v-layout>
-</div>
-</template> -->
+</template>
+
 <script>
 export default {
   data() {
