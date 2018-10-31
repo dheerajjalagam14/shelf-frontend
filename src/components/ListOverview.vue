@@ -2,22 +2,16 @@
   <div class="listOverview">
     <v-layout row>
       <v-flex xs12 sm6 offset-sm3>
+
         <v-card>
-          <!-- <v-toolbar color="cyan"
+
+           <v-toolbar color="#D35400"
           dark
           >
           <v-toolbar-side-icon>
         </v-toolbar-side-icon>
             <v-toolbar-title>Movies</v-toolbar-title>
-
-            <v-btn icon>
-              <v-icon></v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon></v-icon>
-            </v-btn>
-          </v-toolbar> -->
+</v-toolbar>
 
           <v-list three-line>
           <template v-for="(item, index) in items">
@@ -39,6 +33,8 @@
               :key="item.title"
               avatar
               @click=""
+              to="/item"
+
             >
               <v-list-tile-avatar>
                 <img :src="item.avatar">
@@ -51,9 +47,11 @@
             </v-list-tile>
           </template>
         </v-list>
-        <v-btn center
-        dark>
-        Add New Movie</v-btn>
+        <v-layout class="ma-4" row align-center justify-space-between>
+        <v-btn center dark>Add New Movie</v-btn>
+        <v-icon>fas fa-cog</v-icon>
+      </v-layout>
+
 
       </v-card>
     </v-flex>
