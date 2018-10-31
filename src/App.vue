@@ -2,7 +2,7 @@
   <v-app>
     <v-card>
 
-    <v-toolbar color ="#D35400" dark>
+    <v-toolbar color ="#D35400">
 
     <v-tooltip bottom>
     <v-btn icon
