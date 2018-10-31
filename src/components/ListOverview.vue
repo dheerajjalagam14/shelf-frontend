@@ -38,7 +38,7 @@
               v-else
               :key='item.title'
               avatar
-              @click=""
+              @click="'/'"
             >
               <v-list-tile-avatar>
                 <img :src='item.avatar'>
@@ -64,7 +64,11 @@
 export default {
   data() {
     return {
+<<<<<<< HEAD
       itemName: [
+=======
+      items: [
+>>>>>>> master
         {
           avatar: 'https://m.media-amazon.com/images/M/MV5BMTg5NTA3NTg4NF5BMl5BanBnXkFtZTcwNTA0NDYzOA@@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
           title: 'Looper',
