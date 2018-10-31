@@ -2,12 +2,11 @@
   <v-app>
     <v-card>
 
-    <v-toolbar color ="cyan" dark>
+    <v-toolbar color ="#D35400" dark>
 
     <v-tooltip bottom>
     <v-btn icon
     slot="activator"
-    dark
     to="/"
     >
       <v-icon>fa fa-home</v-icon>
@@ -31,7 +30,6 @@
 
       <v-menu open-on-hover
         :nudge-width="100"
-        dark
         transition="slide-y-transition">
 
           <v-btn icon
