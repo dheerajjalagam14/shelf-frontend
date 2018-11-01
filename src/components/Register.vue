@@ -9,10 +9,28 @@
             </v-toolbar>
             <v-card-text>
               <v-form>
-                <v-text-field prepend-icon="fas fa-user-alt" v-model="name" label="Enter your Name" type="text"></v-text-field>
-                <v-text-field prepend-icon="fas fa-envelope" v-model="email" label="Enter your Email" type="email"></v-text-field>
-                <v-text-field id="password" prepend-icon="fas fa-lock" v-model="password" label="Enter password" type="password"></v-text-field>
-                <v-text-field id="confirmedPassword" prepend-icon="fas fa-lock" v-model="confirmedPassword" label="Confirm password" type="password"></v-text-field>
+                <v-text-field
+                  prepend-icon="fas fa-user-alt"
+                  v-model="name"
+                  label="Enter your Name"
+                  type="text"></v-text-field>
+                <v-text-field
+                  prepend-icon="fas fa-envelope"
+                  v-model="email"
+                  label="Enter your Email"
+                  type="email"></v-text-field>
+                <v-text-field
+                  id="password"
+                  prepend-icon="fas fa-lock"
+                  v-model="password"
+                  label="Enter password"
+                  type="password"></v-text-field>
+                <v-text-field
+                  id="confirmedPassword"
+                  prepend-icon="fas fa-lock"
+                  v-model="confirmedPassword"
+                  label="Confirm password"
+                  type="password"></v-text-field>
               </v-form>
             </v-card-text>
           <v-card-actions>
