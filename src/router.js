@@ -6,6 +6,8 @@ import SettingsPage from './components/SettingsPage.vue';
 import ShelfOverview from './components/ShelfOverview.vue';
 import Register from './components/Register.vue';
 import ItemView from './components/ItemView.vue';
+import NewShelfForm from './components/NewShelfForm.vue';
+import NewItemForm from './components/NewItemForm.vue';
 
 Vue.use(Router);
 
@@ -40,6 +42,16 @@ export default new Router({
       path: '/item-view',
       name: 'ItemView',
       component: ItemView,
+    },
+    {
+      path: '/new-shelf',
+      name: 'NewShelfForm',
+      component: NewShelfForm,
+    },
+    {
+      path: '/new-item',
+      name: 'NewItemForm',
+      component: NewItemForm,
     },
   ],
 });
