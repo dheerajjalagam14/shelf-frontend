@@ -42,21 +42,21 @@ export default {
     return {
       itemName: [
         {
-          avatar: 'https://m.media-amazon.com/images/M/MV5BMTg5NTA3NTg4NF5BMl5BanBnXkFtZTcwNTA0NDYzOA@@._V1_SY1000_CR0,0,675,1000_AL_.jpg',
-          title: 'Looper',
-          subtitle: 'Movie Info',
+          avatar: require('../assets/mike-kenneally-599934-unsplash.jpg'),
+          title: 'Blueberrry Spoon',
+          subtitle: 'This is my blueberry spoon',
         },
         { divider: true, inset: true },
         {
-          avatar: 'https://m.media-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_.jpg',
-          title: 'Avatar',
-          subtitle: 'Movie Info',
+          avatar: require('../assets/tiko-giorgadze-967254-unsplash.jpg'),
+          title: 'Wooden Spoons',
+          subtitle: 'These are my wooden spoons',
         },
         { divider: true, inset: true },
         {
-          avatar: 'https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SY1000_CR0,0,674,1000_AL_.jpg',
-          title: 'A Quiet Place',
-          subtitle: 'Movie Info',
+          avatar: require('../assets/hue12-photography-668091-unsplash.jpg'),
+          title: 'Colorful Spoons',
+          subtitle: 'These are my colorful spoons',
         },
       ],
     };
