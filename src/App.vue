@@ -1,52 +1,40 @@
 <template>
   <v-app>
     <v-card>
-
-    <v-toolbar color ="#D35400">
-
-    <v-tooltip bottom>
-    <v-btn icon
-    slot="activator"
-    to="/"
-    >
-      <v-icon>fa fa-home</v-icon>
-    </v-btn>
-    <span>Home</span>
-    </v-tooltip>
-
-    <v-tooltip bottom>
-    <v-btn icon
-    slot="activator">
-      <v-icon>fas fa-arrow-left</v-icon>
-    </v-btn>
-    <span>Back</span>
-  </v-tooltip>
-
-  <v-spacer></v-spacer>
-
-      <v-toolbar-title center>Shelves</v-toolbar-title>
-
+      <v-toolbar color ="#D35400">
+        <v-tooltip bottom>
+        <v-btn icon
+          slot="activator"
+          to="/"
+        >
+          <v-icon>fa fa-home</v-icon>
+        </v-btn>
+        <span>Home</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <v-btn icon
+          slot="activator">
+          <v-icon>fas fa-arrow-left</v-icon>
+        </v-btn>
+        <span>Back</span>
+      </v-tooltip>
       <v-spacer></v-spacer>
-
+      <v-toolbar-title center>Shelves</v-toolbar-title>
+      <v-spacer></v-spacer>
       <v-menu open-on-hover
         :nudge-width="100"
         transition="slide-y-transition">
-
-          <v-btn icon
-          dark
-          slot="activator">
-
-            <v-icon dark>fa fa-cog</v-icon>
-
-            </v-btn>
+        <v-btn icon slot="activator">
+          <v-icon>fas fa-cog</v-icon>
+        </v-btn>
           <v-list>
             <v-list-tile
               v-for="item in items"
               :key="item.label"
               @click=""
               :to="item.value"
-              >
-              <v-list-tile-title v-text="item.label" ></v-list-tile-title>
+            >
+                <v-list-tile-title v-text="item.label" ></v-list-tile-title>
               </v-list-tile>
             </v-list>
           </v-menu>
