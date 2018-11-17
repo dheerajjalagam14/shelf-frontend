@@ -1,7 +1,5 @@
-// remove mock data once api is hooked up.
-import mockData from '@/mockData/dataMock';
-
 // import api
+// import api from '../../api/shelfapi.js';
 
 // Constants
 // export const NAME = 'NAME';
