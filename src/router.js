@@ -8,7 +8,7 @@ import Register from './components/Register.vue';
 import ItemView from './components/ItemView.vue';
 import NewShelfForm from './components/NewShelfForm.vue';
 import NewItemForm from './components/NewItemForm.vue';
-
+import LoadingPage from './components/LoadingPage.vue';
 Vue.use(Router);
 
 export default new Router({
@@ -52,6 +52,11 @@ export default new Router({
       path: '/new-item',
       name: 'NewItemForm',
       component: NewItemForm,
+    },
+    {
+      path: '/loading',
+      name: 'LoadingPage',
+      component: LoadingPage,
     },
   ],
 });
