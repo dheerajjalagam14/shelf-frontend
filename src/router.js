@@ -9,6 +9,7 @@ import ItemView from './components/ItemView.vue';
 import NewShelfForm from './components/NewShelfForm.vue';
 import NewItemForm from './components/NewItemForm.vue';
 import LoadingPage from './components/LoadingPage.vue';
+
 Vue.use(Router);
 
 export default new Router({
