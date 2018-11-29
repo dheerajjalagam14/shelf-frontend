@@ -24,9 +24,9 @@ export const actions = {
 
 // Exports
 export default {
-    namespaced: true,
-    state: { ...initialState },
-    getters,
-    mutations,
-    actions,
-  }
+  namespaced: true,
+  state: { ...initialState },
+  getters,
+  mutations,
+  actions,
+}

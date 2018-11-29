@@ -5,7 +5,7 @@
           <v-layout align-center justify-center>
             <v-flex xs12 sm8 md4>
               <v-card class='elevation-5'>
-                <v-toolbar dark color="#D35400">
+                <v-toolbar dark color="#2e86de">
                 <v-toolbar-title align-center>Login</v-toolbar-title>
                 <v-spacer></v-spacer>
               </v-toolbar>
@@ -19,9 +19,9 @@
               </v-card-text>
               <v-card-actions>
 
-                <v-btn dark color="#D35400">Login</v-btn>
+                <v-btn round dark color="#2e86de" :to="'/'">Login</v-btn>
                   <v-spacer></v-spacer>
-                <v-btn dark color="#D35400">Create Account</v-btn>
+                <v-btn round dark color="#2e86de" :to="'/register'">Create Account</v-btn>
               </v-card-actions>
               </v-card>
           </v-flex>
