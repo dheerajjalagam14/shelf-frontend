@@ -13,7 +13,7 @@
               v-else
               :key='item.title'
               avatar
-              @click="'/'"
+              :to="'/item-view'"
             >
               <v-list-tile-avatar>
                 <img :src='item.avatar'>
@@ -24,7 +24,7 @@
               </v-list-tile-content>
             </v-list-tile>
           </template>
-          <v-list-tile to="/list-overview">
+          <v-list-tile to="/new-item">
             <v-list-tile-avatar>
               <v-icon>fas fa-plus</v-icon>
             </v-list-tile-avatar>

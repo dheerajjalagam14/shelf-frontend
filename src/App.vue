@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-card>
-      <v-toolbar color ="#D35400">
+      <v-toolbar dark color ="#2e86de">
         <v-tooltip bottom>
         <v-btn icon
           slot="activator"
-          to="/"
+          :to="'/'"
         >
           <v-icon>fa fa-home</v-icon>
         </v-btn>

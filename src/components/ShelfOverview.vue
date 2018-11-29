@@ -5,7 +5,7 @@
         <v-list-tile
           :key="index"
           avatar
-          to="/"
+          to="/list-overview"
         >
           <v-list-tile-avatar>
             <v-icon>{{ item.shelfIcon }}</v-icon>
@@ -15,7 +15,7 @@
           </v-list-tile-content>
         </v-list-tile>
       </template>
-      <v-list-tile to="/">
+      <v-list-tile :to="'/new-shelf'">
         <v-list-tile-avatar>
           <v-icon>fas fa-plus</v-icon>
         </v-list-tile-avatar>

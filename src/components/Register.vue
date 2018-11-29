@@ -2,7 +2,7 @@
   <v-layout align-center justify-center>
     <v-flex xs12 sm8 md4>
       <v-card class='elevation-5'>
-        <v-toolbar dark color="#D35400">
+        <v-toolbar dark color="#2e86de">
           <v-toolbar-title>Signup</v-toolbar-title>
             <v-spacer></v-spacer>
           </v-toolbar>
@@ -33,9 +33,9 @@
             </v-form>
           </v-card-text>
         <v-card-actions>
-          <v-btn dark color="#D35400" type='submit' @click="registerUser" >Signup</v-btn>
+          <v-btn round dark color="#2e86de" type='submit' @click="registerUser" >Signup</v-btn>
           <v-spacer></v-spacer>
-          <v-btn dark color="#D35400" type='submit' to="/login">Login</v-btn>
+          <v-btn round dark color="#2e86de" type='submit' to="/login">Login</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>
